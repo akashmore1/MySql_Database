@@ -26,3 +26,13 @@ For Example:
 **_DROP DATABASE hello_world_db;_**
 
 Remember to be careful with this command! Once you drop a database, it's gone!
+
+### Use Database
+
+**_USE <database name>;_**
+
+-- example:
+**_USE dog_walking_app;_**
+
+To see which database we are using:
+**_SELECT database();_**
