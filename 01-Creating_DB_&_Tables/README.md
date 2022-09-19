@@ -18,7 +18,7 @@ A specific example:
 
 CREATE DATABASE soap_store;
 
-### To drop a database:
+## To drop a database:
 
 **_DROP DATABASE database_name;_**
 For Example:
@@ -27,7 +27,7 @@ For Example:
 
 Remember to be careful with this command! Once you drop a database, it's gone!
 
-### Use Database
+## Use Database
 
 **_USE <database name>;_**
 
