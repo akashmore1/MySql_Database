@@ -36,3 +36,10 @@ Remember to be careful with this command! Once you drop a database, it's gone!
 
 To see which database we are using:
 **_SELECT database();_**
+
+## Tables!
+
+1. The True Heart of SQL
+2. A database is just a bunch of tables
+3. In a relational database, at least
+4. Tables Hold The Data! ("a collection of related data held in a structured format within a database")
