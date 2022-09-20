@@ -59,5 +59,14 @@ CREATE TABLE tablename
     column_name datatype,
     column_name datatype
 )
+```
 
+### Example for cats table:
+
+```
+CREATE TABLE cats
+(
+    name VARCHAR(100),
+    age INT
+)
 ```
