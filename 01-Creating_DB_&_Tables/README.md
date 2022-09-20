@@ -43,3 +43,8 @@ To see which database we are using:
 2. A database is just a bunch of tables
 3. In a relational database, at least
 4. Tables Hold The Data! ("a collection of related data held in a structured format within a database")
+
+# Datatypes
+
+1. int : INT is by default signed, INT (which is shorthand for INT SIGNED) therefore has the MAX VALUE of 2147483647. INT UNSIGNED is 0 to 4294967295.
+2. varchar: ranges from 0 to 255 chars
