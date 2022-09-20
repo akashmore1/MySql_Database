@@ -50,3 +50,14 @@ To see which database we are using:
 2. **_varchar_**: ranges from 0 to 255 chars
 
 ![Datatype challenge](./Datatype_Challenge_Sol.png)
+
+# Creating Tables
+
+```
+CREATE TABLE tablename
+(
+    column_name datatype,
+    column_name datatype
+)
+
+```
