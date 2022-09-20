@@ -94,3 +94,9 @@ SHOW tables;
 ```
 SHOW COLUMNS FROM <table_name>;
 ```
+
+or
+
+```
+DESC <table_name>;
+```
