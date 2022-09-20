@@ -8,11 +8,15 @@ Start the CLI:
 
 ### List available databases:
 
+```
 **_show databases;_**
+```
 
 ### The general command for creating a database:
 
+```
 **_CREATE DATABASE database_name;_**
+```
 
 A specific example:
 
@@ -23,7 +27,9 @@ CREATE DATABASE soap_store;
 **_DROP DATABASE database_name;_**
 For Example:
 
+```
 **_DROP DATABASE hello_world_db;_**
+```
 
 Remember to be careful with this command! Once you drop a database, it's gone!
 
@@ -32,10 +38,16 @@ Remember to be careful with this command! Once you drop a database, it's gone!
 **_USE <database name>;_**
 
 -- example:
+
+```
 **_USE dog_walking_app;_**
+```
 
 To see which database we are using:
+
+```
 **_SELECT database();_**
+```
 
 ## Tables!
 
@@ -58,7 +70,7 @@ CREATE TABLE tablename
 (
     column_name datatype,
     column_name datatype
-)
+);
 ```
 
 ### Example for cats table:
@@ -68,5 +80,5 @@ CREATE TABLE cats
 (
     name VARCHAR(100),
     age INT
-)
+);
 ```
