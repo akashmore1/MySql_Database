@@ -9,13 +9,13 @@ Start the CLI:
 ### List available databases:
 
 ```
-**_show databases;_**
+show databases;
 ```
 
 ### The general command for creating a database:
 
 ```
-**_CREATE DATABASE database_name;_**
+CREATE DATABASE database_name;
 ```
 
 A specific example:
@@ -28,7 +28,7 @@ CREATE DATABASE soap_store;
 For Example:
 
 ```
-**_DROP DATABASE hello_world_db;_**
+DROP DATABASE hello_world_db;
 ```
 
 Remember to be careful with this command! Once you drop a database, it's gone!
@@ -40,13 +40,13 @@ Remember to be careful with this command! Once you drop a database, it's gone!
 -- example:
 
 ```
-**_USE dog_walking_app;_**
+USE dog_walking_app;
 ```
 
 To see which database we are using:
 
 ```
-**_SELECT database();_**
+SELECT database();
 ```
 
 ## Tables!
@@ -86,5 +86,11 @@ CREATE TABLE cats
 ### How to know tables are created?
 
 ```
-show tables;
+SHOW tables;
+```
+
+### To know all columns in given table:
+
+```
+SHOW COLUMNS FROM <table_name>;
 ```
