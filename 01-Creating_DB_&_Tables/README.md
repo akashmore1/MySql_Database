@@ -82,3 +82,9 @@ CREATE TABLE cats
     age INT
 );
 ```
+
+### How to know tables are created?
+
+```
+show tables;
+```
