@@ -106,3 +106,26 @@ DESC <table_name>;
 ```
 DROP TABLE <table_name>;
 ```
+
+# Create Your own tables challenge **PASTRY SHOP**
+
+```
+CREATE DATABASE pastry_shop;
+
+USE pastry_shop;
+
+SELECT DATABSE();
+
+CREATE TABLE pastries(
+    name VARCHAR(50),
+    quantity INT
+);
+
+SHOW TABLES;
+
+DESC pastries;
+// or
+SHOW COLUMNS FROM pastries;
+
+DROP TABLE pastries;
+```
