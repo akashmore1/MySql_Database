@@ -32,7 +32,7 @@ VALUES (7, 'draco');
 
 ### How to see inserted data in a table:
 
-    Quick intro to **'SELECT'**
+Quick intro to **'SELECT'**
 
 ```
 SELECT * FROM cats;
