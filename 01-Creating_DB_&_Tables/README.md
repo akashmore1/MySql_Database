@@ -100,3 +100,9 @@ or
 ```
 DESC <table_name>;
 ```
+
+### Detete a table
+
+```
+DROP TABLE <table_name>;
+```
