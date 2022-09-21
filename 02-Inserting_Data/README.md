@@ -1,5 +1,9 @@
 # Insert Data into a table
 
+1. Create a cats_db.
+2. Create a cats table.
+3. Insert some values in cats table.
+
 code:
 
 ```
