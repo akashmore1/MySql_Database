@@ -37,3 +37,12 @@ Quick intro to **'SELECT'**
 ```
 SELECT * FROM cats;
 ```
+
+### Inserting multiple values in DB:
+
+```
+INSERT INTO cats(name, age)
+VALUES ('blue', 21),
+        ('philip', 10),
+        ('gray', 4);
+```
