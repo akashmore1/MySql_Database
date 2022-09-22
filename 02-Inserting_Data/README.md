@@ -83,3 +83,20 @@ You can do it a couple of ways:
 ### Warning in Databases:
 
 ![Warning in Databases](./Warning.png)
+
+# NULL ans NOT NULL
+
+Create a cat2 table with name and age cannot be null, if we don't pass any value
+
+```
+CREATE TABLE cats2(name VARCHAR(40) NOT NULL, age INT NOT NULL);
+
+INSERT INTO cats2(name)
+VALUES('Manya');
+
+// 👆This gives warning because age cannot be null and we are passing only age.
+// This was not issue earlier where we did not specifically applied NOT NULL to name and age.
+// INSERT INTO cats()
+// VALUES();
+// This is valid syntax for cats table where both name and age of this cat is NULL.
+```
