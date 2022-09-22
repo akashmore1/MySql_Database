@@ -72,3 +72,10 @@ VALUES('Linda', 'Belcher', 45),
 VALUES('Philip', 'Frond', 38),
 VALUES('Calvin', 'Fischoder', 70);
 ```
+
+#### If you're wondering how to insert a string (VARCHAR) value that contains quotations, then here's how.
+
+You can do it a couple of ways:
+
+1. Escape the quotes with a backslash: "This text has \"quotes\" in it" or 'This text has \'quotes\' in it'
+2. Alternate single and double quotes: "This text has 'quotes' in it" or 'This text has "quotes" in it'
