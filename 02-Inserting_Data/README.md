@@ -187,7 +187,7 @@ Notice what happens:
 SELECT * FROM unique_cats;
 ```
 
-<!-- Adding in AUTO_INCREMENT:
+Adding in AUTO_INCREMENT:
 
 ```
 CREATE TABLE unique_cats2 (
@@ -206,4 +206,4 @@ INSERT INTO unique_cats2(name, age) VALUES('Skippy', 4);
 Notice the difference:
 
 SELECT * FROM unique_cats2;
-``` -->
+```
