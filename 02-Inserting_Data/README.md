@@ -79,3 +79,7 @@ You can do it a couple of ways:
 
 1. Escape the quotes with a backslash: "This text has \"quotes\" in it" or 'This text has \'quotes\' in it'
 2. Alternate single and double quotes: "This text has 'quotes' in it" or 'This text has "quotes" in it'
+
+### Warning in Databases:
+
+![Warning in Databases](./Warning.png)
