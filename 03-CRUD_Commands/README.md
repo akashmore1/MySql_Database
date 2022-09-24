@@ -35,3 +35,16 @@ If we want specific data in a table.
 ```
 SELECT * FROM cats WHERE age = 4;
 ```
+
+### Aliases
+
+When aliases are used?
+When we join two tables, if both of them have some columns named same, we use aliases.
+
+```
+SELECT cat_id AS id, name FROM cats;
+
+SELECT name AS 'cat name', breed AS 'kitty breed' FROM cats;
+
+DESC cats;
+```
