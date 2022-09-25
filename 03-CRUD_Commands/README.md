@@ -85,3 +85,11 @@ UPDATE cats SET age=12 WHERE breed='Maine Coon';
 
 SELECT * FROM cats WHERE breed='Maine Coon';
 ```
+
+## Delete
+
+```
+DELETE FROM cats WHERE name = 'Egg';
+```
+
+'**DELETE FROM cats**' will delete all content in cats. (But there will be a cats table with no entry unlike '**DROP TABLE cats**')
