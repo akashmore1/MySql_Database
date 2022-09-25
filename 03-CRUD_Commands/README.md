@@ -48,3 +48,14 @@ SELECT name AS 'cat name', breed AS 'kitty breed' FROM cats;
 
 DESC cats;
 ```
+
+## Update
+
+When you are updating something in table, make sure you are targeting correct data.
+Because once updated, you can't go back.
+
+```
+UPDATE cats SET breed = 'Short hair' WHERE breed = 'Tabby';
+
+UPDATE cats set age = 14 WHERE name = 'Misty';
+```
