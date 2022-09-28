@@ -53,3 +53,14 @@ FROM books;
 
 should return title of book with only first 10 characters, with '...' ahead indicating there is more string ahead
 In this way we can use caoncat and substring together in select
+
+## Replace
+
+1. REPLACE() method replaces every occurance.
+2. REPLACE() method is case sentitive.
+
+```
+SELECT REPLACE('one two three four', ' ', ' and ');
+```
+
+should return **one and two and three and four**
