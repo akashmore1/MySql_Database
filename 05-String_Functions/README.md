@@ -64,3 +64,15 @@ SELECT REPLACE('one two three four', ' ', ' and ');
 ```
 
 should return **one and two and three and four**
+
+```
+SELECT REPLACE(title, 'e', '3') FROM books;
+```
+
+👆Replaces all book titles' **e** with **3**
+
+```
+SELECT
+    SUBSTRING(REPLACE(title, 'e', '3'), 1, 10) AS 'weird string'
+FROM books;
+```
