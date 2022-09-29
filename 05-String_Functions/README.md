@@ -84,3 +84,13 @@ SELECT REVERSE(title) FROM books WHERE book_id = 16;
 ```
 
 👆This will return reversed title of book with id 16
+
+## CHAR_LENGTH
+
+CHAR_LENGTH() will return length of string
+
+```
+SELECT CHAR_LENGTH('Hello world');
+```
+
+👆returns 11
