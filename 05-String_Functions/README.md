@@ -76,3 +76,11 @@ SELECT
     SUBSTRING(REPLACE(title, 'e', '3'), 1, 10) AS 'weird string'
 FROM books;
 ```
+
+## Reverse
+
+```
+SELECT REVERSE(title) FROM books WHERE book_id = 16;
+```
+
+👆This will return reversed title of book with id 16
