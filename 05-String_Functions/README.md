@@ -99,6 +99,8 @@ SELECT CHAR_LENGTH('Hello world');
 
 ```
 SELECT UPPER('Hello World');
+
+SELECT CONCAT('MY FAVORITE BOOK IS ', UPPER(title)) FROM books;
 ```
 
 👆Returns 'HELLO WORLD'
@@ -107,6 +109,8 @@ SELECT UPPER('Hello World');
 
 ```
 SELECT LOWER('Hello World');
+
+SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
 ```
 
 👆Returns 'hello world'
