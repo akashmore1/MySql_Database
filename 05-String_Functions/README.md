@@ -140,10 +140,19 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
    👉 'I-love-my-cas'
 
 3. Replace all the spaces in book title with '->'
+
    ```
    SELECT
        REPLACE(
            title, ' ', '->'
-       )
+       ) AS title
        FROM books;
    ```
+
+4. Print writers last name in forward and backward direction
+
+```
+SELECT
+    author_lname AS forwards, REVERSE(author_lname) as backwards
+    FROM books;
+```
