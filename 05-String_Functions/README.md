@@ -183,3 +183,19 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
        title, CHAR_LENGTH(title) as 'character count'
        FROM books;
    ```
+
+8. Print Like this
+   +---------------+-------------+--------------+
+   | short title | author | quantity |
+   +---------------+-------------+--------------+
+   | American G... | Gaiman,Neil | 12 in stock |
+   | A Heartbre... | Eggers,Dave | 104 in stock |
+   +---------------+-------------+--------------+
+
+   ```
+    SELECT
+        CONCAT(SUBSTRING(title, 1, 10), '...') as 'short title',
+        CONCAT(author_lname, ',', author_fname) as author,
+        CONCAT(stock_quantity, ' in stock') as quantity
+        FROM books;
+   ```
