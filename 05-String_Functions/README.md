@@ -163,6 +163,6 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
    SELECT
        UPPER(
            CONCAT(author_fname, ' ', author_lname)
-       )
+       ) as 'full name in caps'
        FROM books;
    ```
