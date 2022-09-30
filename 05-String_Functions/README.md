@@ -166,3 +166,11 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
        ) as 'full name in caps'
        FROM books;
    ```
+
+6. Make this happen
+   **book_name** was released in **released_year**
+   ```
+    SELECT
+        CONCAT(title, ' was released in ', released_year) AS blurb
+        FROM books;
+   ```
