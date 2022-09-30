@@ -102,3 +102,11 @@ SELECT UPPER('Hello World');
 ```
 
 👆Returns 'HELLO WORLD'
+
+## LOWER
+
+```
+SELECT LOWER('Hello World');
+```
+
+👆Returns 'hello world'
