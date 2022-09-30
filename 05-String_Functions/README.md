@@ -94,3 +94,11 @@ SELECT CHAR_LENGTH('Hello world');
 ```
 
 👆returns 11
+
+## UPPER
+
+```
+SELECT UPPER('Hello World');
+```
+
+👆Returns 'HELLO WORLD'
