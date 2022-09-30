@@ -127,6 +127,7 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
    ```
 
 2. What would be output of following code:
+
    ```
    SELECT
        REPLACE(
@@ -135,4 +136,14 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
            '-'
        );
    ```
+
    👉 'I-love-my-cas'
+
+3. Replace all the spaces in book title with '->'
+   ```
+   SELECT
+       REPLACE(
+           title, ' ', '->'
+       )
+       FROM books;
+   ```
