@@ -169,8 +169,17 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
 
 6. Make this happen
    **book_name** was released in **released_year**
+
    ```
     SELECT
         CONCAT(title, ' was released in ', released_year) AS blurb
         FROM books;
+   ```
+
+7. Print book title and and char count of each title
+
+   ```
+   SELECT
+       title, CHAR_LENGTH(title) as 'character count'
+       FROM books;
    ```
