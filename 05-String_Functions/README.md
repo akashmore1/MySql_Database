@@ -151,8 +151,18 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
 
 4. Print writers last name in forward and backward direction
 
-```
-SELECT
-    author_lname AS forwards, REVERSE(author_lname) as backwards
-    FROM books;
-```
+   ```
+   SELECT
+       author_lname AS forwards, REVERSE(author_lname) as backwards
+       FROM books;
+   ```
+
+5. Author's full name in caps
+
+   ```
+   SELECT
+       UPPER(
+           CONCAT(author_fname, ' ', author_lname)
+       )
+       FROM books;
+   ```
