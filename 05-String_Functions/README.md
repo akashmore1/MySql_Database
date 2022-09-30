@@ -126,7 +126,7 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
    select REVERSE(UPPER('Why does my cat look at me with such hatred?'));
    ```
 
-<!-- 2. What would be output of following code:
+2. What would be output of following code:
    ```
    SELECT
        REPLACE(
@@ -135,4 +135,4 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
            '-'
        );
    ```
-   👉 'I-love-my-cas' -->
+   👉 'I-love-my-cas'
