@@ -114,3 +114,25 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
 ```
 
 👆Returns 'hello world'
+
+=====================================================================================================
+
+# String functions exercise
+
+1. Reverse and uppercase following Senetence:
+   'Why does my cat look at me with such hatred?'
+
+   ```
+   select REVERSE(UPPER('Why does my cat look at me with such hatred?'));
+   ```
+
+<!-- 2. What would be output of following code:
+   ```
+   SELECT
+       REPLACE(
+           CONCAT('I',' ','love',' ','my', ' ', 'cats'),
+           ' ',
+           '-'
+       );
+   ```
+   👉 'I-love-my-cas' -->
