@@ -66,3 +66,22 @@ QUE: Return all author last names starting with 'F'
 ```
 SELECT author_lname FROM books WHERE author_lname LIKE 'f%';
 ```
+
+# More Wildcard
+
+```
+SELECT title, stock_quantity FROM books WHERE stock_quantity LIKE '____';
+// Returns all stock_quantity with 4 character because of 4 underscores
+
+SELECT title, stock_quantity FROM books WHERE stock_quantity LIKE '__';
+// Returns all stock_quantity with 2 character because of 2 underscores
+
+(235)234-0987 LIKE '(___)___-____'
+// returns mobile number in list of numbers
+
+SELECT title FROM books WHERE title LIKE '%\%%'
+// returns books having % in their title
+
+SELECT title FROM books WHERE title LIKE '%\_%'
+// returns books having _ in their title
+```
