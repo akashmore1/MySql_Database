@@ -43,4 +43,12 @@ If we want to select 11th book
 ```
 SELECT title, released_year FROM books ORDER BY released_year DESC LIMIT 10, 4;
 // 0 mwans first row
+// Returns 11, 12, 13, 14th row
+```
+
+If we want all data from 8th row till end of the table:
+
+```
+SELECT * FROM table LIMIT 7, 923293768728121712836182
+// Second number insanely big number
 ```
