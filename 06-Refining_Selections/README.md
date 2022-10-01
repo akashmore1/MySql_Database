@@ -52,3 +52,11 @@ If we want all data from 8th row till end of the table:
 SELECT * FROM table LIMIT 7, 923293768728121712836182
 // Second number insanely big number
 ```
+
+# Searching with **LIKE**
+
+```
+SELECT author_fname FROM books WHERE author_fname LIKE '%da%';
+```
+
+👆Returns all authors first names which containes 'da' somewhere
