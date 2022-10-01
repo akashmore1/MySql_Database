@@ -85,3 +85,47 @@ SELECT title FROM books WHERE title LIKE '%\%%'
 SELECT title FROM books WHERE title LIKE '%\_%'
 // returns books having _ in their title
 ```
+
+# Challenges
+
+1. Select all story books from books table
+
+   ```
+   SELECT title AS books FROM books WHERE title like '%stories%';
+   ```
+
+2. Find the biggest books in database
+
+   ```
+   SELECT title, pages FROM books ORDER BY pages DESC LIMIT 1;
+   ```
+
+3. Print a summary containing title and year for 3 most recent books
+
+   ```
+   SELECT CONCAT(title, ' - ', released_year) AS summary FROM books ORDER BY released_year DESC LIMIT 0, 3;
+   ```
+
+4. Find all books with authors that contains ' ' in their last name
+
+   ```
+   SELECT title, author_lname FROM books WHERE author_lname like '% %';
+   ```
+
+5. Find 3 books with lowest number in stock
+
+   ```
+    SELECT title, released_year, stock_quantity FROM books ORDER BY stock_quantity, title LIMIT 0, 3;
+   ```
+
+6. Print title and author_lname, sorted first by author_lname and then by title
+
+   ```
+    SELECT title, author_lname FROM books ORDER BY author_lname, title
+   ```
+
+7. Sorted Alphabetically By Last Name
+
+   ```
+   SELECT CONCAT('My Favourite author is ',  author_fname, ' ', author_lname, '!') as yell FROM books ORDER BY author_lname;
+   ```
