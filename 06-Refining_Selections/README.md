@@ -27,3 +27,13 @@ FROM books ORDER BY 2;
 SELECT author_fname, author_lname FROM books  // Ascending author_lname and if same author_lname then ascending author_fname
 ORDER BY author_lname, author_fname;
 ```
+
+# LIMIT
+
+Mostly LIMIT is used with ORDER BY
+
+Que: Return 4 most recent books:
+
+```
+SELECT title, released_year FROM books ORDER BY released_year DESC LIMIT 4;
+```
