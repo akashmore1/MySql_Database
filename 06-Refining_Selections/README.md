@@ -60,3 +60,9 @@ SELECT author_fname FROM books WHERE author_fname LIKE '%da%';
 ```
 
 👆Returns all authors first names which containes 'da' somewhere
+
+QUE: Return all author last names starting with 'F'
+
+```
+SELECT author_lname FROM books WHERE author_lname LIKE 'f%';
+```
