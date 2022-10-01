@@ -37,3 +37,10 @@ Que: Return 4 most recent books:
 ```
 SELECT title, released_year FROM books ORDER BY released_year DESC LIMIT 4;
 ```
+
+If we want to select 11th book
+
+```
+SELECT title, released_year FROM books ORDER BY released_year DESC LIMIT 10, 4;
+// 0 mwans first row
+```
