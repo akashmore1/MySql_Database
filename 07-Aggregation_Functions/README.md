@@ -65,3 +65,17 @@ It returns Max or Min number of perticular column
 ```
 SELECT MAX(released_year) FROM books;
 ```
+
+**Using Min-Max with subqueries:**
+
+**QUE:** Find title of the books with most pages(Find biggest book)
+
+```
+SELECT title, pages
+    FROM books
+    where pages = ( SELECT MAX(pages)
+                    FROM books
+                );
+```
+
+It is recommneded to use sort over subqueries as subqueries can perform slowly
