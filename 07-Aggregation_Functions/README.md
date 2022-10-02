@@ -54,3 +54,14 @@ SELECT
     GROUP BY released_year
     ORDER BY released_year;
 ```
+
+# Min and Max
+
+Min and Max is applied on numbers
+It returns Max or Min number of perticular column
+
+**QUE:** Find latest year book is released
+
+```
+SELECT MAX(released_year) FROM books;
+```
