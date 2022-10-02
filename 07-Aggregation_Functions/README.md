@@ -100,3 +100,13 @@ Sum function gives sum of all numbers in columns
 ```
 SELECT SUM(pages) FROM books;
 ```
+
+**QUE:** Find numbers of pages written by each author
+
+```
+SELECT
+    CONCAT(author_fname, ' ', author_lname) as Author,
+    SUM(pages) AS pages
+    FROM books
+    GROUP BY author_fname, author_lname;
+```
