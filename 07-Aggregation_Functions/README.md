@@ -21,3 +21,16 @@ SELECT COUNT(DISTINCT author_fname, author_lname) as 'all authors' FROM books;
 ```
 SELECT COUNT(title) FROM books WHERE title LIKE '%the%';
 ```
+
+# Group By
+
+In group by, we group by certain records.
+Supossigly in author_lname column 1 author has multiple books then we group all books written by same author
+Query for above is
+
+```
+SELECT title, author_lname, COUNT(title) FROM books GROUP BY author_lname;
+```
+
+👆Output is:
+![output](./output1.png)
