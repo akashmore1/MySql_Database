@@ -44,3 +44,13 @@ SELECT
     FROM books
     GROUP BY author_fname, author_lname;
 ```
+
+**QUE:** Print number of books released in each year(years in ascending order)
+
+```
+SELECT
+    released_year, COUNT(title)
+    FROM books
+    GROUP BY released_year
+    ORDER BY released_year;
+```
