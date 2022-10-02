@@ -79,3 +79,14 @@ SELECT title, pages
 ```
 
 It is recommneded to use sort over subqueries as subqueries can perform slowly
+
+**QUE:** Find year each author published their first book
+
+```
+SELECT
+    CONCAT(author_fname, ' ', author_lname) as Author,
+    MIN(released_year) AS 'First Book'
+    FROM books
+    GROUP BY author_fname, author_lname
+    ORDER BY released_year;
+```
