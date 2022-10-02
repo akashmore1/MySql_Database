@@ -125,3 +125,14 @@ SELECT
     GROUP BY released_year
     ORDER BY released_year ASC;
 ```
+
+**QUE:** Find average book size for each author
+
+```
+SELECT
+    CONCAT(author_fname, ' ', author_lname),
+    AVG(pages)
+    FROM books
+    GROUP BY author_fname, author_lname
+    ORDER BY AVG(pages)
+```
