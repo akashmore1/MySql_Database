@@ -90,3 +90,13 @@ SELECT
     GROUP BY author_fname, author_lname
     ORDER BY released_year;
 ```
+
+# The Sum Function
+
+Sum function gives sum of all numbers in columns
+
+**QUE:** Find all number of pages of all books in table
+
+```
+SELECT SUM(pages) FROM books;
+```
