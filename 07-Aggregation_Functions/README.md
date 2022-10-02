@@ -34,3 +34,9 @@ SELECT title, author_lname, COUNT(title) FROM books GROUP BY author_lname;
 
 👆Output is:
 ![output](./output1.png)
+
+**QUE:** Print number of books written by each author
+
+```
+SELECT CONCAT(author_fname, ' ', author_lname) AS Author, COUNT(title) AS 'No of Nooks' FROM books GROUP BY author_fname, author_lname;
+```
