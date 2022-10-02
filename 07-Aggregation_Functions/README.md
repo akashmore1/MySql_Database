@@ -110,3 +110,18 @@ SELECT
     FROM books
     GROUP BY author_fname, author_lname;
 ```
+
+# Avg Function
+
+AVG function gives average of all numbers in columns
+Average returns decimal with 4 decimal points
+
+**QUE:** Find average stock value of books for each year in ascending order
+
+```
+SELECT
+    released_year, AVG(stock_quantity)
+    FROM books
+    GROUP BY released_year
+    ORDER BY released_year ASC;
+```
