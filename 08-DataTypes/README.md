@@ -31,4 +31,21 @@ CREATE TABLE items (
 4. DECIMAL take more space than FLOAT or DOUBLE but it is very accurate.
 5. While Float occupy less space but not accurate. Float is not precise after 7 character digits.
 6. DOUBLE is not precise after 15 character digits.
-   ![float and double](./float_and_double.png)
+
+```
+CREATE TABLE thingies (price FLOAT);
+
+INSERT INTO thingies(price) VALUES (88.45);
+
+SELECT * FROM thingies;
+
+INSERT INTO thingies(price) VALUES (8877.45);
+
+SELECT * FROM thingies;
+
+INSERT INTO thingies(price) VALUES (8877665544.45);
+
+SELECT * FROM thingies;
+```
+
+![float and double](./float_and_double.png)
