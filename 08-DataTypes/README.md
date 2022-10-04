@@ -19,3 +19,6 @@ CREATE TABLE items (
 2. There will be 4 decimals characters in this number.
 3. So maximum number that can be saved in price is 999.9999
 4. DECIMAL is used for precision.
+5. If we insert very large number more than 999.9999 (in this case), mamixum value is automatically added to price i.e 999.9999
+6. Also if there are more than 4 decimals then value will be rounded upto 4 decimals.
+7. e.g. 6.99999999 will become 7.0000
