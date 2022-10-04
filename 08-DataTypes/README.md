@@ -22,3 +22,13 @@ CREATE TABLE items (
 5. If we insert very large number more than 999.9999 (in this case), mamixum value is automatically added to price i.e 999.9999
 6. Also if there are more than 4 decimals then value will be rounded upto 4 decimals.
 7. e.g. 6.99999999 will become 7.0000
+
+# FLOAT and DOUBLE
+
+1. Difference between FLOAT, DOUBLE and DECIMAL are quite technical and how they are stored in memory
+2. FLOAT and DOUBLE can stored larger numbers with lesser memory compared to DECIMAL.
+3. But this is compromised by pricision.
+4. DECIMAL take more space than FLOAT or DOUBLE but it is very accurate.
+5. While Float occupy less space but not accurate. Float is not precise after 7 character digits.
+6. DOUBLE is not precise after 15 character digits.
+   ![float and double](./float_and_double.png)
