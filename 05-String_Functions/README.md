@@ -137,7 +137,7 @@ SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
        );
    ```
 
-   👉 'I-love-my-cas'
+   👉 'I-love-my-cats'
 
 3. Replace all the spaces in book title with '->'
 
