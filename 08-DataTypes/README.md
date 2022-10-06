@@ -49,3 +49,7 @@ SELECT * FROM thingies;
 ```
 
 ![float and double](./float_and_double.png)
+
+# DATE, TIME, DATETIME
+
+Format for DATETIME is yyyy-mm-dd hh-mm-ss
