@@ -52,4 +52,4 @@ SELECT * FROM thingies;
 
 # DATE, TIME, DATETIME
 
-Format for DATETIME is yyyy-mm-dd hh-mm-ss
+Format for DATETIME is 'yyyy-mm-dd hh:mm:ss'
