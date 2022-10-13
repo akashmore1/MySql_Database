@@ -65,3 +65,9 @@ VALUES('Larry', '1943-12-25', '04:10:42', '1943-12-25 04:10:42');
 
 SELECT * FROM people;
 ```
+
+# CURDATE(), CURTIME(), NOW()
+
+1. CURDATE() - gives current date
+2. CURTIME() - gives current time
+3. NOW() - gives current datetime
