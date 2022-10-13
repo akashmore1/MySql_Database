@@ -71,3 +71,8 @@ SELECT * FROM people;
 1. CURDATE() - gives current date
 2. CURTIME() - gives current time
 3. NOW() - gives current datetime
+
+```
+INSERT INTO user(name, birthdate, birthtime, birthdt)
+values("Vishwesh", CURDATE(), CURTIME(), NOW());
+```
