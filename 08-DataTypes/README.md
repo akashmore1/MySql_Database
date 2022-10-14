@@ -111,3 +111,12 @@ returns:
 6. HOUR() and MINUTE() acn be applied on TIME and DATETIME datatypes.
 7. Always refer mysql documentation for this
    `https://dev.mysql.com/doc/refman/8.0/en/date-and-time-type-syntax.html`
+8. We have DATE_FORMAT() function we pass date to it and a string of special character as second argument for format in which we want date
+
+```
+SELECT DATE_FORMAT(birthdt, 'Was born on a %W') FROM people;
+
+SELECT DATE_FORMAT(birthdt, '%m/%d/%Y') FROM people;
+
+SELECT DATE_FORMAT(birthdt, '%m/%d/%Y at %h:%i') FROM people;
+```
