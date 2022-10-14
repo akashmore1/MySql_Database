@@ -85,4 +85,18 @@ values("Vishwesh", CURDATE(), CURTIME(), NOW());
 SELECT name, DAY(birthdate) from user;
 ```
 
-return 30 in my case, cause my birthday is 30th oct
+👆return 30 in my case, cause my birthday is 30th oct
+
+2. DAYBAME() gives sunday, monday.... etc
+
+```
+SELECT name, birthdate, DAYNAME(birthdate) FROM user;
+```
+
+returns:
++----------+------------+--------------------+
+| name | birthdate | DAYNAME(birthdate) |
++----------+------------+--------------------+
+| Akash | 1998-10-30 | Friday |
+| Vishwesh | 1998-10-09 | Friday |
++----------+------------+--------------------+
