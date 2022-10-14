@@ -108,3 +108,6 @@ returns:
 
 4. HOUR() gives hour
 5. MINUTE() gives minute
+6. HOUR() and MINUTE() acn be applied on TIME and DATETIME datatypes.
+7. Always refer mysql documentation for this
+   `https://dev.mysql.com/doc/refman/8.0/en/date-and-time-type-syntax.html`
