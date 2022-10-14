@@ -99,3 +99,9 @@ returns:
 | -------- | ---------- | ------------------ |
 | Akash    | 1998-10-30 | Friday             |
 | Vishwesh | 1998-10-09 | Friday             |
+
+3. DAYOFWEEK() gives number of day in a week (sunday is 1, saturday is 7)
+
+4.DAYOFYEAR() gives number of day in year. (1 january is 1, 31 dec is 365)
+
+**_These functions can be applied on both DATE and DATETIME datatypes._**
