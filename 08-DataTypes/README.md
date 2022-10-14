@@ -76,3 +76,13 @@ SELECT * FROM people;
 INSERT INTO user(name, birthdate, birthtime, birthdt)
 values("Vishwesh", CURDATE(), CURTIME(), NOW());
 ```
+
+# Formatting Dates
+
+1. DAY() gives day in number
+
+```
+SELECT name, DAY(birthdate) from user;
+```
+
+return 30 in my case, cause my birthday is 30th oct
