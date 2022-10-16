@@ -133,3 +133,9 @@ SELECT DATEDIFF(now(), birthdt) FROM user;
 ```
 
 # DATE_ADD(<datetime>, INTERVAL <'duration in month, year... minutes etc'>)
+
+Interval used to sepecify how much we want to add in datetime
+
+```
+SELECT name, birthdt, DATE_ADD(birthdt, INTERVAL 4 MONTH) FROM user;
+```
