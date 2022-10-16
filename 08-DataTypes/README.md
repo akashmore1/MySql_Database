@@ -120,3 +120,7 @@ SELECT DATE_FORMAT(birthdt, '%m/%d/%Y') FROM people;
 
 SELECT DATE_FORMAT(birthdt, '%m/%d/%Y at %h:%i') FROM people;
 ```
+
+# DATEDIFF
+
+used to find different between to datetimes
