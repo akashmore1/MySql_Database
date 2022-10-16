@@ -123,4 +123,9 @@ SELECT DATE_FORMAT(birthdt, '%m/%d/%Y at %h:%i') FROM people;
 
 # DATEDIFF()
 
-used to find different between to datetimes
+1. used to find different between to datetimes.
+2. It gives number of in between days.
+
+```
+SELECT DATEDIFF(now(), birthdt) FROM user;
+```
