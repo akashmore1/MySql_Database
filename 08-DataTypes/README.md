@@ -131,3 +131,5 @@ SELECT DATE_FORMAT(birthdt, '%m/%d/%Y at %h:%i') FROM people;
 ```
 SELECT DATEDIFF(now(), birthdt) FROM user;
 ```
+
+# DATE_ADD(<datetime>, INTERVAL <'duration in month, year... minutes etc'>)
