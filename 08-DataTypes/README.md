@@ -139,3 +139,13 @@ Interval used to sepecify how much we want to add in datetime
 ```
 SELECT name, birthdt, DATE_ADD(birthdt, INTERVAL 4 MONTH) FROM user;
 ```
+
+# Add, Substract datetime
+
+Instead of using DATE_ADD(), we can use `+` or `-` in datetime.
+
+```
+SELECT birthdt, birthdt - INTERVAL 1 MONTH from user;
+
+SELECT birthdt, birthdt - INTERVAL 1 MONTH + INTERVAL 1 YEAR  from user;
+```
