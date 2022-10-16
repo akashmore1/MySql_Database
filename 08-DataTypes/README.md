@@ -121,6 +121,8 @@ SELECT DATE_FORMAT(birthdt, '%m/%d/%Y') FROM people;
 SELECT DATE_FORMAT(birthdt, '%m/%d/%Y at %h:%i') FROM people;
 ```
 
+# **_DATE ARITHMATIC_**
+
 # DATEDIFF()
 
 1. used to find different between to datetimes.
