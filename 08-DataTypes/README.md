@@ -152,6 +152,8 @@ SELECT birthdt, birthdt - INTERVAL 1 MONTH + INTERVAL 1 YEAR  from user;
 
 # Working with timestamps
 
+used for string current datetime, (created at or updated at)
+
 ```
 CREATE TABLE comments (
     content VARCHAR(100),
