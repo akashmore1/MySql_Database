@@ -238,13 +238,17 @@ QUE: Print current day and time using mm/dd/yyyy format
 SELECT DATE_FORMAT(NOW(), '%m/%d/%Y');
 ```
 
-<!-- QUE: Print current date and time using this format 'January 2, at 3.15'
+QUE: Print current date and time using this format 'January 2, at 3.15'
 
 ```
 SELECT CONCAT(MONTHNAME(NOW()), ' ',DAY(NOW()), ', ', 'at ', HOUR(NOW()), '.', MINUTE(NOW()));
+
+//or
+
+SELECT DATE_FORMAT(NOW(), '%M %D at %h:%i')
 ```
 
-QUE: Create a tweets table
+<!-- QUE: Create a tweets table
 
 ```
 CREATE TABLE tweets(
