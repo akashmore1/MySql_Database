@@ -214,7 +214,7 @@ QUE: Difference between DATETIME, TIMESTAMP
 3. DATETIME takes more space roughly twice as much as TIMESTAMP
 4. We use TIMESTAMP for storing metadata of when something is created or updated.
 
-<!-- QUE: Print current time:
+QUE: Print current time:
 
 ```
 SELECT CURTIME();
@@ -238,7 +238,7 @@ QUE: Print current day and time using mm/dd/yyyy format
 SELECT DATE_FORMAT(NOW(), '%m/%d/%Y');
 ```
 
-QUE: Print current date and time using this format 'January 2, at 3.15'
+<!-- QUE: Print current date and time using this format 'January 2, at 3.15'
 
 ```
 SELECT CONCAT(MONTHNAME(NOW()), ' ',DAY(NOW()), ', ', 'at ', HOUR(NOW()), '.', MINUTE(NOW()));
