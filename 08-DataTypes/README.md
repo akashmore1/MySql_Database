@@ -248,7 +248,7 @@ SELECT CONCAT(MONTHNAME(NOW()), ' ',DAY(NOW()), ', ', 'at ', HOUR(NOW()), '.', M
 SELECT DATE_FORMAT(NOW(), '%M %D at %h:%i')
 ```
 
-<!-- QUE: Create a tweets table
+QUE: Create a tweets table
 
 ```
 CREATE TABLE tweets(
@@ -256,4 +256,4 @@ CREATE TABLE tweets(
     user_name VARCHAR(20),
     created_at TIMESTAMP DEFAULT NOW()
 );
-``` -->
+```
