@@ -196,3 +196,57 @@ CREATE TABLE comments2 (
 QUE: What is good use case for CHAR?
 We use CHAR when we know exact string length.
 e.g yes/no questions: 'y' or 'n'
+
+QUE: Create table inventory
+
+```
+CREATE TABLE inventory(
+    item_name VARCHAR(40),
+    price DECIMAL(8,2),
+    quantity INT
+);
+```
+
+<!-- QUE: Difference between DATETIME, TIMESTAMP
+DATETIME containes date and time. TIMESTAMP can be of type TIME or DATETIME.
+We use TIMESTAMP for current time or time atwhich something is happening like api call.
+
+QUE: Print current time:
+
+```
+SELECT CURTIME();
+```
+
+QUE: Print current Date:
+
+```
+SELECT CURDATE();
+```
+
+QUE: Print current day of week
+
+```
+SELECT DAYOFWEEK(NOW());
+```
+
+QUE: Print current day and time using mm/dd/yyyy format
+
+```
+SELECT DATE_FORMAT(NOW(), '%m/%d/%Y');
+```
+
+QUE: Print current date and time using this format 'January 2, at 3.15'
+
+```
+SELECT CONCAT(MONTHNAME(NOW()), ' ',DAY(NOW()), ', ', 'at ', HOUR(NOW()), '.', MINUTE(NOW()));
+```
+
+QUE: Create a tweets table
+
+```
+CREATE TABLE tweets(
+    tweet_content VARCHAR(100),
+    user_name VARCHAR(20),
+    created_at TIMESTAMP DEFAULT NOW()
+);
+``` -->
