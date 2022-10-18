@@ -190,3 +190,9 @@ CREATE TABLE comments2 (
     changed_at TIMESTAMP DEFAULT NOW() ON UPDATE NOW()
 );
 ```
+
+# Challenges
+
+QUE: What is good use case for CHAR?
+We use CHAR when we know exact string length.
+e.g yes/no questions: 'y' or 'n'
