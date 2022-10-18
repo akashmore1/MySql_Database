@@ -207,11 +207,14 @@ CREATE TABLE inventory(
 );
 ```
 
-<!-- QUE: Difference between DATETIME, TIMESTAMP
-DATETIME containes date and time. TIMESTAMP can be of type TIME or DATETIME.
-We use TIMESTAMP for current time or time atwhich something is happening like api call.
+QUE: Difference between DATETIME, TIMESTAMP
 
-QUE: Print current time:
+1. They both store date and time.
+2. TIMESTAMP have much smaller range compared to DATETIME.
+3. DATETIME takes more space roughly twice as much as TIMESTAMP
+4. We use TIMESTAMP for storing metadata of when something is created or updated.
+
+<!-- QUE: Print current time:
 
 ```
 SELECT CURTIME();
