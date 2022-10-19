@@ -17,5 +17,11 @@ SELECT title, author_lname FROM books WHERE author_lname != 'Harris';
 Select all books that start with 'W'
 
 ```
-Select title FROM books WHERE title LIKE 'W%';
+SELECT title FROM books WHERE title LIKE 'W%';
+```
+
+Select all books that ❌don't start with 'W'
+
+```
+SELECT title FROM books WHERE title NOT LIKE 'W%';
 ```
