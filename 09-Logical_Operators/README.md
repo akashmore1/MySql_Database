@@ -305,3 +305,12 @@ Print title, released_year, genre("new column, if(year >=200) then 'Modern' or '
 ```
 SELECT title, released_year, CASE WHEN released_year >= 2000 THEN 'Modern' ELSE 'OLD' END FROM books;
 ```
+
+```
+SELECT title, released_year,
+       CASE
+         WHEN released_year >= 2000 THEN 'Modern Lit'
+         ELSE '20th Century Lit'
+       END AS GENRE
+FROM books;
+```
