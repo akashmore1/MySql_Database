@@ -199,3 +199,18 @@ Please note, as of MySQL 8.0.17, the || operator is deprecated and support for i
 Applications should be adjusted to use the standard SQL OR operator.
 If you're using MySQL 5.7 or older, which most of you are if you're using GoormIDE, then you don't have to worry about this right now.
 But, in newer versions of MySQL (8.0.17 and newer) you will need to replace || with OR.
+
+# Between
+
+Find all books released in between 2000 to 2014
+
+```
+SELECT * FROM books WHERE released_year >= 2000 AND released_year <= 2014;
+```
+
+👆We can do like this with logic.
+However there is BETWEEN .. AND .. operator
+
+```
+SELECT * FROM books WHERE released_year BETWEEN 2000 AND 2014;
+```
