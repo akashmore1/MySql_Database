@@ -236,3 +236,22 @@ WHERE
     birthdt BETWEEN CAST('1980-01-01' AS DATETIME)
     AND CAST('2000-01-01' AS DATETIME);
 ```
+
+# IN
+
+Select all books written by...
+Carver, Lahiri, Smith
+
+```
+SELECT title, author_lname FROM books
+WHERE author_lname='Carver' OR
+      author_lname='Lahiri' OR
+      author_lname='Smith';
+```
+
+**IN** makes it much easier
+
+```
+SELECT title, author_lname FROM books
+WHERE author_lname IN ('Carver', 'Lahiri', 'Smith');
+```
