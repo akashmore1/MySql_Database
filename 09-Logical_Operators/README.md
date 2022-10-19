@@ -214,3 +214,25 @@ However there is BETWEEN .. AND .. operator
 ```
 SELECT * FROM books WHERE released_year BETWEEN 2000 AND 2014;
 ```
+
+**NOT BETWEEN** is also a thing
+
+## CAST('something' AS DATETIME)
+
+While using BETWEEN for dates and times, it is highly recommented that to convert these into **DATETIME** and then apply BETWEEN
+
+```
+SELECT CAST('2017-05-02' AS DATETIME);
+
+use new_testing_db;
+
+SELECT name, birthdt FROM people WHERE birthdt BETWEEN '1980-01-01' AND '2000-01-01';
+
+SELECT
+    name,
+    birthdt
+FROM people
+WHERE
+    birthdt BETWEEN CAST('1980-01-01' AS DATETIME)
+    AND CAST('2000-01-01' AS DATETIME);
+```
