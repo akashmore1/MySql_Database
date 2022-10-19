@@ -326,3 +326,41 @@ SELECT title, stock_quantity,
     END AS STOCK
 FROM books;
 ```
+
+# Exercise
+
+1. Select all books where author_lname starts with a 'C' or an 'S'
+
+```
+SELECT * FROM books WHERE author_lname LIKE 'C%' OR author_lname LIKE 'S%';
+```
+
+2. If title contains 'stories' -> Short Stories
+   Just Kids and A Heartbreaking Work -> Memoir
+   Everything Else -> Novel
+
+```
+SELECT title, author_lname,
+    CASE
+        WHEN title LIKE '%stories%'
+        THEN 'Short Stories'
+        WHEN title LIKE '%Just Kids%' OR title LIKE '%A Heartbreaking Work%'
+        THEN 'Memoir'
+        ELSE 'Novel'
+    END
+    AS Type
+    FROM books;
+```
+
+3. Show number of books by each author
+
+```
+SELECT author_fname, author_lname,
+    COUNT(*),
+    CASE
+        WHEN COUNT(*) = 1 THEN '1 book'
+        ELSE CONCAT(COUNT(*), ' books')
+    END AS Count
+    FROM books
+    GROUP BY author_fname, author_lname;
+```
