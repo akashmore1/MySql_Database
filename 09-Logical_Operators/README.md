@@ -297,3 +297,11 @@ SELECT title, released_year FROM books
 WHERE released_year >= 2000 AND
 released_year % 2 != 0;
 ```
+
+# Case Statements
+
+Print title, released_year, genre("new column, if(year >=200) then 'Modern' or 'Old'")
+
+```
+SELECT title, released_year, CASE WHEN released_year >= 2000 THEN 'Modern' ELSE 'OLD' END FROM books;
+```
