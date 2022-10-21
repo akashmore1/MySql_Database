@@ -30,3 +30,30 @@ CREATE TABLE orders(
     FOREIGN KEY(customer_id) REFERENCES customers(id)
 );
 ```
+
+# Cross Join
+
+## Finding Orders Placed By George: 2 Step Process
+
+```
+SELECT id FROM customers WHERE last_name='George';
+SELECT * FROM orders WHERE customer_id = 1;
+```
+
+## Finding Orders Placed By George: Using a subquery
+
+```
+SELECT * FROM orders WHERE customer_id =
+(
+SELECT id FROM customers
+WHERE last_name='George'
+);
+```
+
+## Cross Join Craziness
+
+In cross join, every record of first table is mapped to every record of second table.
+
+```
+SELECT * FROM customers, orders;
+```
