@@ -222,3 +222,14 @@ SELECT first_name, title, grade
 FROM students
 LEFT JOIN papers ON students.student_id = papers.student_id;
 ```
+
+QUE: Print average grades of all students, with desc order
+
+```
+SELECT first_name, AVG(IFNULL(grade, 0)) AS average
+FROM students
+LEFT JOIN papers
+ON students.student_id = papers.student_id
+GROUP BY first_name
+ORDER BY average DESC;
+```
