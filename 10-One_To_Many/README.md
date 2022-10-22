@@ -233,3 +233,19 @@ ON students.student_id = papers.student_id
 GROUP BY first_name
 ORDER BY average DESC;
 ```
+
+QUE: Print name, avearge grade, passing status.
+(If avg > 75% then pass or fail)
+
+```
+SELECT first_name, AVG(IFNULL(grade, 0)) AS average,
+CASE
+    WHEN AVG(IFNULL(grade, 0)) >= 75 THEN 'PASS'
+    ELSE 'FAIL'
+END AS passing_status
+FROM students
+LEFT JOIN papers
+ON students.student_id = papers.student_id
+GROUP BY first_name
+ORDER BY average DESC;
+```
