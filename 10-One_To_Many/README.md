@@ -214,3 +214,11 @@ INNER JOIN papers
 ON  students.student_id = papers.student_id
 ORDER BY grade DESC;
 ```
+
+QUE: Print all students and then their paper title with grade
+
+```
+SELECT first_name, title, grade
+FROM students
+LEFT JOIN papers ON students.student_id = papers.student_id;
+```
