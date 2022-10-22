@@ -176,3 +176,41 @@ CREATE TABLE orders(
         ON DELETE CASCADE
 );
 ```
+
+# One to many exercise
+
+Que: Create students and paper table
+
+```
+CREATE TABLE students(
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(40)
+);
+
+CREATE TABLE papers(
+    title VARCHAR(40),
+    grade DECIMAL(4, 1),
+    student_id INT,
+    FOREIGN KEY(student_id) REFERENCES students(student_id)
+)
+
+INSERT INTO students (first_name) VALUES
+('Caleb'), ('Samantha'), ('Raj'), ('Carlos'), ('Lisa');
+
+INSERT INTO papers (student_id, title, grade ) VALUES
+(1, 'My First Book Report', 60),
+(1, 'My Second Book Report', 75),
+(2, 'Russian Lit Through The Ages', 94),
+(2, 'De Montaigne and The Art of The Essay', 98),
+(4, 'Borges and Magical Realism', 89);
+```
+
+QUE: PRINT student, title, grade with desc grade
+
+```
+SELECT first_name, title, grade
+FROM students
+INNER JOIN papers
+ON  students.student_id = papers.student_id
+ORDER BY grade DESC;
+```
