@@ -101,3 +101,16 @@ ON customers.id = orders.customer_id;
 SELECT * FROM customers
 JOIN orders ON customers.id = orders.id;
 ```
+
+# LEFT JOIN
+
+```
+SELECT first_name, last_Name, order_date, amount
+FROM customers
+LEFT JOIN orders
+  ON customers.id = orders.customer_id;
+```
+
+This will return
+
+![left join](./leftjoin.png)
