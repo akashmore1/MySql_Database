@@ -133,3 +133,9 @@ ORDER BY total_spent;
 
 1. Right Join is similar to left join
 2. If we apply left join on cutstomer(reverse order of joining) and apply right join, it is exactly like left join in baove example
+
+```
+SELECT * FROM customers
+RIGHT JOIN orders
+    ON customers.id = orders.customer_id;
+```
