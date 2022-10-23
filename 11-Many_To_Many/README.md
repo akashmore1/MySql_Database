@@ -136,3 +136,13 @@ FROM reviewers
 INNER JOIN reviews
     ON reviewers.id = reviews.reviewer_id;
 ```
+
+Que: Print unreviewed series
+
+```
+SELECT title as unreviewed_series
+FROM series
+LEFT JOIN reviews
+    ON series.id = reviews.series_id
+WHERE IFNULL(reviews.rating, 0) = 0;
+```
