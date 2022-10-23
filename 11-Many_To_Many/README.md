@@ -146,3 +146,14 @@ LEFT JOIN reviews
     ON series.id = reviews.series_id
 WHERE IFNULL(reviews.rating, 0) = 0;
 ```
+
+Que: Genre and its avg rating
+
+```
+SELECT genre, AVG(rating) as avgrating
+FROM series
+JOIN reviews
+ON series.id = reviews.series_id
+GROUP BY genre
+ORDER BY avgrating;
+```
