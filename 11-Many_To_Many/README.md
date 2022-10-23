@@ -167,3 +167,22 @@ FROM   series
                ON series.id = reviews.series_id
 GROUP  BY genre;
 ```
+
+Que: analyse reviewers with, first name, last name, count, min, max, avg, status of rating
+
+```
+SELECT first_name, last_name,
+IFNULL(COUNT(rating), 0) AS COUNT,
+IFNULL(MIN(rating), 0) AS MIN,
+IFNULL(MAX(rating), 0) AS MAX,
+IFNULL(AVG(rating), 0) AS AVG,
+CASE
+    WHEN COUNT(rating) = 0
+    	THEN 'INACTIVE'
+    ELSE 'ACTIVE'
+END AS STATUS
+FROM reviewers
+LEFT JOIN reviews
+ON reviewers.id = reviews.reviewer_id
+GROUP BY reviewers.id;
+```
