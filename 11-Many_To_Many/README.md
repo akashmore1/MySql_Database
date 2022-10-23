@@ -112,3 +112,27 @@ JOIN reviews
 GROUP BY series.id
 ORDER BY avgrating;
 ```
+
+Que: Print reviewer and their ratings
+
+```
+SELECT
+    first_name,
+    last_name,
+    rating
+FROM reviews
+INNER JOIN reviewers
+    ON reviewers.id = reviews.reviewer_id;
+```
+
+or
+
+```
+SELECT
+    first_name,
+    last_name,
+    rating
+FROM reviewers
+INNER JOIN reviews
+    ON reviewers.id = reviews.reviewer_id;
+```
