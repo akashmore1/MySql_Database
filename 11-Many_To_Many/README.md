@@ -206,3 +206,15 @@ FROM   reviewers
               ON reviewers.id = reviews.reviewer_id
 GROUP  BY reviewers.id;
 ```
+
+Que: Join 3 tables and print title, rating and reviewer
+
+```
+SELECT title, rating, CONCAT(first_name, ' ', last_name)
+FROM series
+INNER JOIN reviews
+    ON series.id = reviews.series_id
+INNER JOIN reviewers
+    ON reviewers.id = reviews.reviewer_id
+ORDER BY title;
+```
