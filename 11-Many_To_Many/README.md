@@ -101,3 +101,14 @@ FROM series
 JOIN reviews
     ON series.id = reviews.series_id;
 ```
+
+Que: Print average rating of each series and sort by asc
+
+```
+SELECT title, AVG(rating) as avgrating
+FROM series
+JOIN reviews
+    ON series.id = reviews.series_id
+GROUP BY series.id
+ORDER BY avgrating;
+```
