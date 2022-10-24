@@ -14,3 +14,12 @@ CREATE table users(
     created_at TIMESTAMP DEFAULT now()
 );
 ```
+
+# Insert data into users
+
+```
+INSERT INTO users(user_name)
+VALUES('BlueTheCat'),
+('CharlieBrown'),
+('ColtSteele');
+```
