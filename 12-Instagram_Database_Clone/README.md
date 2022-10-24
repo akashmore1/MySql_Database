@@ -35,3 +35,10 @@ CREATE TABLE photos(
     FOREIGN KEY(user_id) REFERENCES users(id)
 );
 ```
+
+```
+INSERT INTO photos(img_url, user_id)
+VALUES('/sdcsdv', 1),
+('/swdwqv', 2),
+('/ewdcwd', 2);
+```
