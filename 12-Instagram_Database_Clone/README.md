@@ -23,3 +23,15 @@ VALUES('BlueTheCat'),
 ('CharlieBrown'),
 ('ColtSteele');
 ```
+
+# Create photos table
+
+```
+CREATE TABLE photos(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    img_url VARCHAR(255) NOT NULL,
+    user_id INT NOT NULL,
+    created_at TIMESTAMP DEFAULT now(),
+    FOREIGN KEY(user_id) REFERENCES users(id)
+);
+```
