@@ -56,3 +56,10 @@ CREATE TABLE comments(
     FOREIGN KEY(photo_id) REFERENCES photos(id)
 );
 ```
+
+```
+INSERT INTO comments(comment_text, user_id, photo_id)
+VALUES('Nice pic', 1, 2),
+('Amazing pic', 3, 2),
+('I <3 this!', 2, 1);
+```
