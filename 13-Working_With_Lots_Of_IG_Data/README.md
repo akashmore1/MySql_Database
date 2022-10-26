@@ -17,3 +17,13 @@ GROUP BY day_name
 ORDER BY COUNT(day_name) DESC
 LIMIT 1;
 ```
+
+3. Que: Find inactive users. Never posted a photo.
+
+```
+SELECT users.username, photos.id
+FROM users
+LEFT JOIN photos
+    ON users.id = photos.user_id
+WHERE photos.id IS NULL;
+```
