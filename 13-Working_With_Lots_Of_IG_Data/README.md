@@ -42,3 +42,12 @@ GROUP BY likes.photo_id
 ORDER BY COUNT(likes.photo_id) DESC
 LIMIT 4;
 ```
+
+5. Que: Find average numbers of photos every users has
+
+```
+SELECT(
+    (SELECT COUNT(photos.id) FROM photos) /
+    (SELECT COUNT(users.id) FROM users)
+);
+```
