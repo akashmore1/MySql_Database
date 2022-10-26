@@ -27,3 +27,18 @@ LEFT JOIN photos
     ON users.id = photos.user_id
 WHERE photos.id IS NULL;
 ```
+
+4. Que: Find most liked instagram photo and its user
+
+```
+SELECT users.username, photos.user_id, likes.photo_id,
+COUNT(likes.photo_id)
+FROM likes
+JOIN photos
+    on photos.id = likes.photo_id
+JOIN users
+    ON photos.user_id = users.id
+GROUP BY likes.photo_id
+ORDER BY COUNT(likes.photo_id) DESC
+LIMIT 4;
+```
