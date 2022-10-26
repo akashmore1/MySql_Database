@@ -66,3 +66,16 @@ GROUP BY photo_tags.tag_id
 ORDER BY COUNT(photo_tags.photo_id) DESC
 LIMIT 4;
 ```
+
+7. Que: Find bots.(Users that have liked every single photo there is)
+
+```
+SELECT
+	users.username,
+    likes.user_id
+FROM likes
+JOIN users
+    ON users.id = likes.user_id
+GROUP BY likes.user_id
+HAVING COUNT(likes.photo_id) = (SELECT COUNT(photos.id) FROM photos);
+```
