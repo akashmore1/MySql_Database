@@ -51,3 +51,18 @@ SELECT(
     (SELECT COUNT(users.id) FROM users)
 );
 ```
+
+6. Que: Top 4 most used hashtags
+
+```
+SELECT
+	tags.tag_name,
+    COUNT(photo_tags.photo_id),
+    photo_tags.tag_id
+FROM tags
+JOIN photo_tags
+    ON tags.id = photo_tags.tag_id
+GROUP BY photo_tags.tag_id
+ORDER BY COUNT(photo_tags.photo_id) DESC
+LIMIT 4;
+```
